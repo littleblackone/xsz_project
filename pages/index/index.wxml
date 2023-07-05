@@ -1,0 +1,65 @@
+<xzs-header></xzs-header>
+<!-- 轮播图 -->
+<view class="banner">
+  <swiper previous-margin="30rpx" circular interval="3000" autoplay indicator-dots indicator-active-color="#BDA066" indicator-color="rgba(255,255,255,.3)">
+    <swiper-item>
+      <image src="/images/banner0.jpg" mode="" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/banner1.jpg" mode="" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/banner2.jpg" mode="" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/banner3.jpg" mode="" />
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 导航栏 -->
+<view class="scrollNav">
+  <scroll-view scroll-x>
+    <navigator open-type="reLaunch" url="/pages/classify/classify?idx={{index}}" wx:for="{{navArr}}" wx:key="_id" class="item">
+      <view class="pic">
+        <image src="{{item.icon}}" alt="{{item.classname}}" />
+      </view>
+      <view class="text">
+        {{item.classname}}
+      </view>
+    </navigator>
+  </scroll-view>
+</view>
+<!-- 公司介绍 -->
+<view class="about">
+  <view class="about_header">
+    <text class="en">introduce</text>
+    <text class="cn">茶美文化馆简介</text>
+    <view class="line"></view>
+  </view>
+  <view class="content">
+    <view class="row">
+      白茶，素为茶中珍品，历史悠久，属中国六大茶类之一，具有极高的收藏价值。巷子深茶美文化馆，位于泉城济南，是一家致力于弘扬茶美文化，集白茶销售、品牌、体验、品鉴于一体的综合性企业。
+    </view>
+    <view class="row">
+      巷子深茶美文化馆，传承卓越，与美共勉，以中式传统风格为基础，结合现代时尚格调，将观赏性与实用性、商务与休闲、体验与收藏高度融合，为顾客提供全新的体验式服务。茶舍环境优雅，可以茶会友、修身养性、品鉴收藏，感受白茶独特的文化魅力。
+    </view>
+    <view class="row">
+      从白茶的栽培管理到茶窖存储，每一款产品都诠释着我们追求完美的品质之心，我们拥有最佳的仓储环境，全系列白茶产品，优质的客户服务，致力于打造创新发展、诚信经营的新标杆。
+    </view>
+  </view>
+</view>
+<!-- 新闻资讯 -->
+<view class="news">
+  <view class="about_header">
+    <text class="en">News</text>
+    <text class="cn">新闻资讯</text>
+    <view class="line"></view>
+  </view>
+  <view class="news_list">
+    <view class="box" wx:for="{{newsArr}}" wx:key="_id">
+      <xzs-newsItem item="{{item}}"></xzs-newsItem>
+    </view>
+  </view>
+</view>
+<!-- footer -->
+<xzs-footer></xzs-footer>

@@ -1,0 +1,10 @@
+.newsbox{
+  padding: 30rpx;
+  &_load{
+    text-align: center;
+  }
+  .noDataText{
+    font-size: 28rpx;
+    color: #666;
+  }
+}

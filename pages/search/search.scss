@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .history-content {
+    display: flex;
+    gap: 10rpx;
+
+    .history-item {
+      padding: 14rpx 28rpx;
+      border-radius: 10rpx;
+      background-color: rgb(247, 248, 248);
+    }
+  }
+
+  .history-header {
+    display: flex;
+    padding: 20rpx 40rpx;
+    justify-content: space-between;
+
+    .history-title {
+      color: #8e8e8e;
+    }
+
+    .delete-box {
+      display: flex;
+      align-items: center;
+
+      .delete-text {
+        color: #8e8e8e;
+      }
+    }
+  }
+}
+
+.van-search__content {
+  border-radius: 100rpx !important;
+}
+
+.van-search__action-button {
+  color: #ffffff !important;
+}
+
+.content {
+  .body {
+    padding: 50rpx 30rpx;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .box {
+      width: 330rpx;
+      margin-bottom: 30rpx;
+    }
+  }
+}
+
+.loadOut {
+  text-align: center;
+  padding: 30rpx 0;
+
+  .noData {
+    font-size: 30rpx;
+    color: #666;
+  }
+}

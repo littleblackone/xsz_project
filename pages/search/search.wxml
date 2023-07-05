@@ -1,0 +1,31 @@
+<view class="container">
+  <view class="search">
+    <van-search background="#BDA066" placeholder="请输入产品名称" show-action bind:search="onSearch" bind:cancel="onCancel">
+    </van-search>
+  </view>
+  <view class="history">
+    <view class="history-header">
+      <text class="history-title">搜索历史</text>
+      <view class="delete-box" bindtap="clearHistory">
+        <van-icon name="delete-o" color="#8e8e8e" size="26" class="clear-history" />
+        <text class="delete-text">清空历史</text>
+      </view>
+    </view>
+
+    <view class="history-content">
+      <view wx:for="{{ searchHistory }}" wx:key="index" class="history-item">
+        <text class="history-text" bindtap="backSearch" data-text="{{item}}">{{ item }}</text>
+      </view>
+    </view>
+  </view>
+  <view class="loadOut">
+    <van-loading size="24px" wx:if="{{loading}}">加载中...</van-loading>
+  </view>
+  <view class="content">
+    <view class="body">
+      <view class="box" wx:for="{{proArr}}" wx:key="_id">
+        <xzs-productItem item="{{item}}"></xzs-productItem>
+      </view>
+    </view>
+  </view>
+</view>

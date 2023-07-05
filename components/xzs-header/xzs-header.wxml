@@ -1,0 +1,10 @@
+
+<view class="header">
+  <navigator url="/pages/index/index" class="logo">
+    <image src="/images/logo.jpg" mode="heightFix" class="pic"/>
+  </navigator>
+
+  <navigator url="/pages/search/search" class="search">
+    <van-icon name="search" size="50rpx" color="#BDA066"/>
+  </navigator>
+</view>

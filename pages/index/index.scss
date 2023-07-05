@@ -1,0 +1,72 @@
+// 轮播图
+.banner {
+  margin-top: 30rpx;
+
+  swiper {
+    height: 460rpx;
+
+    swiper-item {
+      image {
+        width: 690rpx;
+        height: 460rpx;
+        border-radius: 30rpx;
+      }
+    }
+  }
+}
+
+//导航栏
+.scrollNav {
+  padding: 60rpx 30rpx;
+
+  scroll-view {
+    white-space: nowrap;
+
+    .item {
+      display: inline-block;
+      text-align: center;
+
+      .pic image {
+        height: 105rpx;
+        width: 105rpx;
+      }
+
+      .text {
+        font-size: 30rpx;
+      }
+    }
+
+    .item:not(:last-child) {
+      padding-right: 25rpx;
+    }
+
+  }
+}
+
+//公司简介
+.about {
+  background-image: url(https://mp-3309c116-4743-47d6-9979-462d2edf878c.cdn.bspapp.com/cloudstorage/fcc4ad5c-56a5-4f30-b1bc-4d1d2f1f63a2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60rpx 30rpx;
+
+  .content {
+    .row {
+      text-indent: 2em;
+      color: var(--focusColor);
+    }
+
+    .row:not(:last-child) {
+      margin-bottom: 28rpx;
+      border-bottom: 1px dashed var(--themeColor);
+      padding-bottom: 28rpx;
+    }
+  }
+}
+
+.news_list{
+  padding: 20rpx 30rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+}

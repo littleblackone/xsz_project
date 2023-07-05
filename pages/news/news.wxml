@@ -1,0 +1,12 @@
+<xzs-header></xzs-header>
+<view class="newsbox">
+  <view class="newsbox_list" wx:for="{{newsArr}}" wx:key="_id">
+    <xzs-newsItem item="{{item}}"></xzs-newsItem>
+  </view>
+  <view class="newsbox_load">
+    <view class="loading">
+      <van-loading size="24px" wx:if="{{loading}}">加载中...</van-loading>
+    </view>
+    <text class="noDataText" wx:if="{{dataLoadFinished}}">没有更多数据了~</text>
+  </view>
+</view>

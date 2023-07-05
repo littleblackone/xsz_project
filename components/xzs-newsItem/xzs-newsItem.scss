@@ -1,0 +1,44 @@
+.item{
+  display: flex;
+  gap: 30rpx;
+  .news_pic{
+    width: 220rpx;
+    height: 150rpx;
+  }
+  .contentbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 440rpx;
+    
+    .title{
+      text-overflow: -o-ellipsis-lastline;
+      overflow: hidden;				
+      text-overflow: ellipsis;	
+      display: -webkit-box;		
+      -webkit-line-clamp: 2;
+      line-clamp: 2;					
+      -webkit-box-orient: vertical;
+      color: var(--globalColor);
+      line-height: 1.4em;
+    }
+
+    .info{
+      display: flex;
+      justify-content: space-between;
+      color: var(--descColor);
+      font-size: 28rpx;
+      van-icon{
+        margin-right: 6rpx;
+      }
+      .block{
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.item:last-child{
+  margin-bottom: 40rpx;
+}
